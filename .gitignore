@@ -1,0 +1,7 @@
+node_modules
+.webpack-cache
+src
+index.js
+package-lock.json
+tailwind.config.js
+webpack.config.js
