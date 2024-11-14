@@ -3,5 +3,7 @@ node_modules
 src
 /index.js
 package-lock.json
+package.json
 tailwind.config.js
 webpack.config.js
+.gitignore
