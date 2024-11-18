@@ -21,9 +21,9 @@ Class Calculator {
         // Adding Script
         add_action( 'wp_enqueue_scripts', function () {
 
-            wp_enqueue_style( 'cobra-calculator', trailingslashit( plugin_dir_url( __FILE__ ) ) . "dist/output.css", rand(1,99999));
+            wp_enqueue_style( 'cobra-calculator', trailingslashit( plugin_dir_url( __FILE__ ) ) . "dist/output.css", NULL,'1.0');
             
-            wp_enqueue_script( 'cobra-calculator', trailingslashit( plugin_dir_url( __FILE__ ) ) . "dist/index.js", ['jquery','wp-element'], rand(1,99999),true);
+            wp_enqueue_script( 'cobra-calculator', trailingslashit( plugin_dir_url( __FILE__ ) ) . "dist/index.js", ['jquery','wp-element'], '1.0',true);
 
             wp_localize_script( 'wp-react-cc', 'appLocalizer', [
                 'nonce' => wp_create_nonce( 'wp_rest' ),
