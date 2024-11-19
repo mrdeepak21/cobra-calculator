@@ -35,7 +35,9 @@ Class Calculator {
         add_shortcode( 'cobra_calculator', function() {
             ob_start();
             ?>
-            <div id="app">Loading...</div>
+            <div id="app">
+            <span class="loader"></span>
+            </div>
             <?php
             $app = ob_get_contents();
             ob_end_clean();
