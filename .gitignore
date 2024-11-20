@@ -7,3 +7,5 @@ package.json
 tailwind.config.js
 webpack.config.js
 .gitignore
+dist/*.index.js
+dist/*.txt
